@@ -1,0 +1,42 @@
+.carrruseltext{
+    color: black;
+}
+
+.bg-dark {
+    background-color: rgb(18, 124, 189)!important;
+}
+
+.navbarnav2{
+    margin-right: 38%;
+}
+
+.imagen:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px rgb(52, 137, 186);
+    -webkit-box-shadow: 0px 0px 15px 15px rgb(52, 137, 186);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+/*para la pagina de login*/
+#centrado{
+    padding-top: 100px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fondoLogin{
+    background-color: rgb(233, 236, 239);
+}
+
+.jumbotron{
+    background-color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bg-dark1 {
+    background-color: rgb(68, 80, 93)!important;
+}

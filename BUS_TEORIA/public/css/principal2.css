@@ -1,0 +1,61 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: black;
+    background-color: rgb(233, 236, 239);
+}
+
+  .carrruseltext{
+    color: black;
+}
+
+.bg-dark {
+    background-color: #0a0e47 !important;
+}
+
+/*para la pagina de editar codigo*/
+.textoarea{
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px; 
+    width: 100%;
+    resize: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.centrarform{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*para la pagina editar perfil*/
+.for{
+    background-color: rgb(255, 255, 255);
+    border: 4px;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px; 
+}
+
+.for2{
+    padding-top: 30px; 
+}
+
+
+.textoarea2{
+    overflow-y: scroll;
+}
+
+/*tabla pagina planes*/
+.margenTabla{
+    margin-top: 100px;
+}
+
+.centrardiv{
+    margin-left: auto;
+    margin-right: auto;
+}

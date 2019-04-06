@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DCS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="fondo">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" style="color:ivory">DCS</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Usuario. Ejemplo: Anónimo" aria-label="user">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Iniciar</button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-10 col-sm-10 col-lg-6 col-xl-6 menu">
+                <!--MENU-->
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3><strong>Digital Circuit Simulator </strong></h3>
+                    </div>
+                    <div class="card-body">
+                        <!---<h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        --><input type="button" class="btn btn-secondary" value="Reglas" data-toggle="modal" data-target="#rules"><br><br>
+                        <input type="button" class="btn btn-secondary" value="Jugar"><br><br>
+                        <input type="button" class="btn btn-secondary" value="Mejores"><br><br>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <a href="#" class="btn btn-secondary">Términos</a>
+                    </div>
+                </div>
+                <!--FIN MENU-->
+
+                <!-- Modal -->
+                <div class="modal fade" id="rules" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Cómo Jugar</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Siguiente</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN MODAL-->
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/controlador.js "></script>
+</body>
+
+</html>

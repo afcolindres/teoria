@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>TransBus</title>
+
+    <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="css/principal.css" rel="stylesheet">
+  <link href="css/principal2.css" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+  
+  </head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="col-lg-3 col-xl-3 col-md-8 col-sm-8 col-8">
+			<div>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html"><img src="" class="img-responsive"> <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <form class="form-inline mt-2 mt-md-0">
+        <ul class="navbar-nav mr-100px">
+          <li class="nav-item active d-sm-none d-md-block d-none d-sm-block" style="padding-right: 15px">
+              <input style="width: 600px; border-radius: 5px" class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </li>
+          <li class="nav-item">
+              <a style="font-size:20px" class="nav-link" href="ayuda.html">
+                  <span data-feather="help-circle"></span>
+                  Ayuda
+              </a>
+          </li>
+          <li class="nav-item">
+              <a style="font-size:20px" class="nav-link" href="#">
+                  <span data-feather="settings"></span>
+                  Soporte
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a style="font-size:20px" class="nav-link dropdown-toggle" href="" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></span>  Perfil</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown03">
+                  <a class="dropdown-item" href="perfil.html">Ver perfil</a>
+                  <a class="dropdown-item" href="/cerrar-sesion">Salir</a>
+              </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </nav>
+
+   
+  <!-- dashboard -->
+  <div class="container-fluid">
+    <div class="row">
+      <main style="margin-top:50px" class="col-md-12 ml-sm-12 col-lg-12 ">
+        <div class="container">
+            <div class="row">
+              <div style=" margin-top: 175px; margin-bottom: 50px " class="col-lg-4">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="input-group mb-3">
+                          <input type="text" style="height:80px" class="form-control" placeholder="Numero de viajes" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-success" type="button">Calcular</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                  <div class="container">
+                      <div class="row">
+                        <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
+                            <div class="border rounded" style="box-shadow: 2px 2px 5px #999">
+                                <div>
+                                  <br>
+                                  <img class="img responsive" src="img/imagen.jpg"  width="150" height="150">
+                                  <div class="col-lg-12">
+                                    <br>
+                                    <button class="btn btn-dark" type="button"  data-toggle="modal" data-target="#reserva">Descripción viaje 1</button>
+                                    <br>
+                                  </div>
+                                </div><br>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
+                            <div class="border rounded" style="box-shadow: 2px 2px 5px #999">
+                                <div>
+                                  <br>
+                                  <img class="img responsive" src="img/imagen.jpg"  width="150" height="150">
+                                  <div class="col-lg-12">
+                                    <br>
+                                    <button class="btn btn-dark" type="button"  data-toggle="modal" data-target="#reserva">Descripción viaje 2</button>
+                                    <br>
+                                  </div>
+                                </div><br>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
+                            <div class="border rounded" style="box-shadow: 2px 2px 5px #999">
+                                <div>
+                                  <br>
+                                  <img class="img responsive" src="img/imagen.jpg"  width="150" height="150">
+                                  <div class="col-lg-12">
+                                    <br>
+                                    <button class="btn btn-dark" type="button"  data-toggle="modal" data-target="#reserva">Descripción viaje 3</button>
+                                    <br>
+                                  </div>
+                                </div><br>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
+                            <div class="border rounded" style="box-shadow: 2px 2px 5px #999">
+                                <div>
+                                  <br>
+                                  <img class="img responsive" src="img/imagen.jpg"  width="150" height="150">
+                                  <div class="col-lg-12">
+                                    <br>
+                                    <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#reserva">Descripción viaje 4</button>
+                                    <br>
+                                  </div>
+                                </div><br>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        
+        <footer class="container">
+            <p class="float-right"><a class="carrruseltext" href="#">Back to top</a></p>
+            <p>&copy; 2018-2019 TransBus, Inc. &middot; <a class="carrruseltext" href="#">Privacy</a> &middot; <a class="carrruseltext" href="#">Terms</a></p>
+        </footer>
+      </main>
+    </div>
+  </div>
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="reserva" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Primera Clase</th>
+                  <th scope="col">Normal</th>
+                  <th scope="col">Tercera edad y niños</th>
+                  <th scope="col">Utilidad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th >9</th>
+                  <td>15</td>
+                  <td>12</td>
+                  <td>$$</td>
+                </tr>
+                <tr>
+                  <th >9</th>
+                  <td>15</td>
+                  <td>12</td>
+                  <td>$$</td>
+                </tr>
+                <tr>
+                  <th >9</th>
+                  <td>15</td>
+                  <td>12</td>
+                  <td>$$</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- FOOTER -->
+      
+ <script src="js/popper.min.js"></script>
+    
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="js/controlador_rutas.js"></script>   
+    
+  </body>
+</html>
