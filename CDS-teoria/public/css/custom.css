@@ -64,3 +64,9 @@ body {
     margin-left: 7px;
     margin-top: 5px;
 }
+
+div.modal-header {
+    
+    background-color: #BFFFFB;
+
+}
