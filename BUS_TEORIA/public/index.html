@@ -49,7 +49,7 @@
                   Soporte
               </a>
           </li>
-          <li class="nav-item dropdown">
+          <li style="display:none" class="nav-item dropdown">
               <a style="font-size:20px" class="nav-link dropdown-toggle" href="" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></span>  Perfil</a>
               <div class="dropdown-menu" aria-labelledby="dropdown03">
                   <a class="dropdown-item" href="perfil.html">Ver perfil</a>
@@ -79,10 +79,18 @@
                           </div>
                         </div>
                       </div>
+
+                      <div class="col-12">
+                        <div class="">
+                          <div style="text-align:center" >
+                            <button style="height:80px" class="btn btn-success" data-toggle="modal" data-target="#detalles"type="button">Informe detallado</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
               </div>
-              <div class="col-lg-8">
+              <div  class="col-lg-8">
                   <div class="container">
                       <div class="row">
                         <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
@@ -157,6 +165,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        Detalles viaje 1
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -174,28 +183,75 @@
               <tbody>
                 <tr>
                   <th >9</th>
-                  <td>15</td>
-                  <td>12</td>
-                  <td>$$</td>
-                </tr>
-                <tr>
-                  <th >9</th>
-                  <td>15</td>
-                  <td>12</td>
-                  <td>$$</td>
-                </tr>
-                <tr>
-                  <th >9</th>
-                  <td>15</td>
-                  <td>12</td>
-                  <td>$$</td>
+                  <td>20</td>
+                  <td>11</td>
+                  <td>L. 20,500</td>
                 </tr>
               </tbody>
             </table>
+            <br>
+            <br>
+            <img src="/img/grafico1.jpg" alt="">
       </div>
     </div>
   </div>
 </div>
+
+
+<div class="modal fade" id="detalles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          Detalles total de viajes
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">N0. viaje</th>
+                    <th scope="col">Utilidad primera Clase</th>
+                    <th scope="col">Utilidad normal</th>
+                    <th scope="col">Utilidad tercera edad y niños</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >1</th>
+                    <td>$$</td>
+                    <td>$$</td>
+                    <td>$$</td>
+                  </tr>
+                  <tr>
+                    <td >2</th>
+                    <td>$$</td>
+                    <td>$$</td>
+                    <td>$$</td>
+                  </tr>
+                  <tr>
+                    <td >3</th>
+                    <td>$$</td>
+                    <td>$$</td>
+                    <td>$$</td>
+                  </tr>
+                  <tr>
+                    <td >4</th>
+                    <td>$$</td>
+                    <td>$$</td>
+                    <td>$$</td>
+                  </tr>
+                    
+                </tbody>
+              </table>
+              <br>
+              <br>
+              <img src="/img/grafico2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
       <!-- FOOTER -->
