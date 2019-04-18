@@ -15,6 +15,7 @@
   <link href="css/principal.css" rel="stylesheet">
   <link href="css/principal2.css" rel="stylesheet">
   <link href="css/dashboard.css" rel="stylesheet">
+  <script type="text/javascript" src="css/Chart.bundle.min.js"></script>
   
   </head>
 <body>
@@ -73,9 +74,9 @@
                     <div class="row">
                       <div class="col-12">
                         <div class="input-group mb-3">
-                          <input type="text" style="height:80px" class="form-control" placeholder="Numero de viajes" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <input id="can_viajes" type="text" style="height:80px" class="form-control" placeholder="Numero de viajes" aria-label="Recipient's username" aria-describedby="basic-addon2">
                           <div class="input-group-append">
-                            <button class="btn btn-success" type="button">Calcular</button>
+                            <button class="btn btn-success" id="btn_calcular" type="button">Calcular</button>
                           </div>
                         </div>
                       </div>
@@ -83,7 +84,7 @@
                       <div class="col-12">
                         <div class="">
                           <div style="text-align:center" >
-                            <button style="height:80px" class="btn btn-success" data-toggle="modal" data-target="#detalles"type="button">Informe detallado</button>
+                            <button style="height:80px" class="btn btn-success" onclick="detalles_rutas();" type="button">Informe detallado de viajes</button>
                           </div>
                         </div>
                       </div>
@@ -92,21 +93,9 @@
               </div>
               <div  class="col-lg-8">
                   <div class="container">
-                      <div class="row">
-                        <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
-                            <div class="border rounded" style="box-shadow: 2px 2px 5px #999">
-                                <div>
-                                  <br>
-                                  <img class="img responsive" src="img/imagen.jpg"  width="150" height="150">
-                                  <div class="col-lg-12">
-                                    <br>
-                                    <button class="btn btn-dark" type="button"  data-toggle="modal" data-target="#reserva">Descripción viaje 1</button>
-                                    <br>
-                                  </div>
-                                </div><br>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
+                      <div class="row" id="rutasver">
+                        
+                        <!-- <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
                             <div class="border rounded" style="box-shadow: 2px 2px 5px #999">
                                 <div>
                                   <br>
@@ -118,33 +107,7 @@
                                   </div>
                                 </div><br>
                             </div>
-                        </div>
-                        <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
-                            <div class="border rounded" style="box-shadow: 2px 2px 5px #999">
-                                <div>
-                                  <br>
-                                  <img class="img responsive" src="img/imagen.jpg"  width="150" height="150">
-                                  <div class="col-lg-12">
-                                    <br>
-                                    <button class="btn btn-dark" type="button"  data-toggle="modal" data-target="#reserva">Descripción viaje 3</button>
-                                    <br>
-                                  </div>
-                                </div><br>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4 col-lg-4 col-md-4 col-sm-4" style="text-align:center">
-                            <div class="border rounded" style="box-shadow: 2px 2px 5px #999">
-                                <div>
-                                  <br>
-                                  <img class="img responsive" src="img/imagen.jpg"  width="150" height="150">
-                                  <div class="col-lg-12">
-                                    <br>
-                                    <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#reserva">Descripción viaje 4</button>
-                                    <br>
-                                  </div>
-                                </div><br>
-                            </div>
-                        </div>
+                        </div> -->
                       </div>
                   </div>
               </div>
@@ -165,7 +128,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        Detalles viaje 1
+        Detalles del viaje
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -181,77 +144,68 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th >9</th>
-                  <td>20</td>
-                  <td>11</td>
-                  <td>L. 20,500</td>
+                <tr style="text-align:center" id="fila">
+                  
                 </tr>
               </tbody>
             </table>
             <br>
             <br>
-            <img src="/img/grafico1.jpg" alt="">
+            <div id="canvas-container" style="width:100%;">
+              <canvas id="chart" width="500" height="350"></canvas>
+            </div>
+            
       </div>
     </div>
   </div>
 </div>
 
 
-<div class="modal fade" id="detalles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          Detalles total de viajes
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">N0. viaje</th>
-                    <th scope="col">Utilidad primera Clase</th>
-                    <th scope="col">Utilidad normal</th>
-                    <th scope="col">Utilidad tercera edad y niños</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td >1</th>
-                    <td>$$</td>
-                    <td>$$</td>
-                    <td>$$</td>
-                  </tr>
-                  <tr>
-                    <td >2</th>
-                    <td>$$</td>
-                    <td>$$</td>
-                    <td>$$</td>
-                  </tr>
-                  <tr>
-                    <td >3</th>
-                    <td>$$</td>
-                    <td>$$</td>
-                    <td>$$</td>
-                  </tr>
-                  <tr>
-                    <td >4</th>
-                    <td>$$</td>
-                    <td>$$</td>
-                    <td>$$</td>
-                  </tr>
-                    
-                </tbody>
-              </table>
-              <br>
-              <br>
-              <img src="/img/grafico2.jpg" alt="">
+
+
+<!-- Modal -->
+<div  class="modal fade" id="detalles" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Detalles total de viajes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div style="height: 500px; width: 100%; overflow-y: auto;" class="modal-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">No. viaje</th>
+              <th scope="col">Utilidad primera Clase</th>
+              <th scope="col">Utilidad normal</th>
+              <th scope="col">Utilidad tercera edad y niños</th>
+              <th scope="col">Utilidad del viaje</th>
+            </tr>
+          </thead>
+          <tbody id="utilidades" style="text-align:center">
+            <!-- <tr>
+              <td >1</th>
+              <td>$$</td>
+              <td>$$</td>
+              <td>$$</td>
+              <td>$$</td>
+            </tr> -->
+            
+              
+          </tbody>
+        </table>
+        <br>
+        <div id="canvas-container" style="width:100%;">
+          <canvas id="chart2" width="500" height="350"></canvas>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+
 
 
       <!-- FOOTER -->
